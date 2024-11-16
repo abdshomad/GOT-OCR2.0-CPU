@@ -235,7 +235,7 @@ def eval_model(args):
             lines = lines.split("const text =")
             new_web = lines[0] + 'const text ='  + gt  + lines[1]
             
-        with open(html_path_2, 'w') as web_f_new:
+        with open(html_path_2, 'w', encoding="utf-8") as web_f_new:
             web_f_new.write(new_web)
 
 
